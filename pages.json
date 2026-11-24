@@ -1,0 +1,27 @@
+{
+  "pages": [
+    { "path": "pages/index/index", "style": { "navigationBarTitleText": "鞋履精选", "navigationStyle": "custom" } },
+    { "path": "pages/category/index", "style": { "navigationBarTitleText": "分类", "navigationBarBackgroundColor": "#ffffff" } },
+    { "path": "pages/cart/index", "style": { "navigationBarTitleText": "购物车", "navigationBarBackgroundColor": "#ffffff" } },
+    { "path": "pages/profile/index", "style": { "navigationBarTitleText": "我的", "navigationBarBackgroundColor": "#ffffff" } },
+    { "path": "pages/product/index", "style": { "navigationBarTitleText": "商品详情", "navigationBarBackgroundColor": "#ffffff" } }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "鞋履精选",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f7f7f7"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#171717",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/category/index", "text": "分类" },
+      { "pagePath": "pages/cart/index", "text": "购物车" },
+      { "pagePath": "pages/profile/index", "text": "我的" }
+    ]
+  }
+}

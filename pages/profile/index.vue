@@ -1,0 +1,10 @@
+<template>
+  <view class="page"><view class="profile"><view class="avatar">☺</view><view><text class="name">欢迎来到 STEP</text><text class="login">登录后享受会员服务</text></view><text class="arrow">›</text></view><view class="order"><view class="row"><text class="title">我的订单</text><text class="all" @tap="notice">全部订单　›</text></view><view class="actions"><view @tap="notice"><text>▣</text><text>待付款</text></view><view @tap="notice"><text>□</text><text>待发货</text></view><view @tap="notice"><text>◇</text><text>待收货</text></view><view @tap="notice"><text>↺</text><text>退款/售后</text></view></view></view><view class="menu"><view v-for="item in menus" :key="item" class="menu-item" @tap="notice"><text>{{ item }}</text><text class="arrow">›</text></view></view><text class="foot">品质鞋履 · 轻松每一步</text></view>
+</template>
+<script setup>
+const menus = ['收货地址', '优惠券', '联系客服', '关于我们']
+function notice() { uni.showToast({ title: '功能即将开放', icon: 'none' }) }
+</script>
+<style scoped>
+.page{padding:30rpx}.profile{display:flex;align-items:center;background:#fff;border-radius:22rpx;padding:30rpx}.avatar{width:100rpx;height:100rpx;border-radius:50%;background:#e7eee9;color:#586b5f;display:flex;align-items:center;justify-content:center;font-size:56rpx;margin-right:22rpx}.name{display:block;font-size:29rpx;font-weight:700}.login{display:block;color:#999;font-size:21rpx;margin-top:8rpx}.arrow{margin-left:auto;color:#aaa;font-size:36rpx}.order{background:#fff;border-radius:22rpx;margin-top:22rpx;padding:26rpx}.row{display:flex;align-items:center;justify-content:space-between}.title{font-weight:700;font-size:28rpx}.all{font-size:21rpx;color:#999}.actions{display:flex;justify-content:space-between;margin-top:30rpx}.actions view{display:flex;flex-direction:column;align-items:center;gap:10rpx;color:#777;font-size:21rpx}.actions view text:first-child{font-size:34rpx;color:#69766e}.menu{background:#fff;border-radius:22rpx;margin-top:22rpx;padding:0 26rpx}.menu-item{height:94rpx;display:flex;align-items:center;border-bottom:1rpx solid #f1f1f1;font-size:25rpx}.menu-item:last-child{border:0}.foot{display:block;text-align:center;color:#bbb;font-size:20rpx;margin-top:50rpx}
+</style>

@@ -1,0 +1,13 @@
+{
+  "name": "鞋履精选",
+  "appid": "__UNI__SHOEMALL",
+  "description": "精选日常与运动鞋履",
+  "versionName": "0.1.0",
+  "versionCode": "10",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "",
+    "setting": { "urlCheck": false },
+    "usingComponents": true
+  }
+}
